@@ -1,0 +1,26 @@
+
+    #navigation-menu {
+        /* metodo calc() calcula la altura 
+        100vh es el total de alto de la pantalla y se le resta los 4rem del header para que tener el total de lo que sobra*/
+        height: calc(100vh - 4rem);
+    }
+
+    .imagen {
+        width: 640px;
+        height: 480px;
+    }
+
+    /* .navigation-link:hover al pasar el mouse por ese link se mostrara .navigation-submenu */
+    .navigation-link:hover .navigation-submenu {
+        display: block !important;
+    }
+
+    .slider-tam{
+        height: 70vh;
+    }
+
+    .inputoutlinenone {
+        outline: none;
+        
+        border: 0;
+      }
