@@ -2,7 +2,7 @@
 
  <div > 
     
-            <img class="w-full slider-tam" src="Storage/{{$slider->imagen}}" alt="{{$slider->nombre}}" title="{{$slider->nombre}}">
+            <img class="w-full slider-tam" src="/storage/{{$slider->imagen}}" alt="{{$slider->nombre}}" title="{{$slider->nombre}}">
    
  </div> 
       
