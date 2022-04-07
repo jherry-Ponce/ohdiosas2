@@ -3,10 +3,9 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
-use Gloudemans\Shoppingcart\Facades\Cart;
-
 use App\Models\Color;
-use App\Models\Size;
+use App\Models\size;
+use Gloudemans\Shoppingcart\Facades\Cart;
 class UpdateCartItemSize extends Component
 {
     public $rowId, $qty, $quantity;
