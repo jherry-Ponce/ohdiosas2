@@ -1,13 +1,13 @@
 <x-app-layout>
     <div class="container py-8">
-        <div class="grid grid-cols-2 gap-6" >
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6" >
             <div>
                 <!-- Place somewhere in the <body> of your page -->
                 <div class="flexslider">
                     <ul class="slides">
                         @if ($product->images->count())
                             @foreach ($product->images as $image)
-                                <li class="rounded-t h-96 w-full object-cover object-center" data-thumb="/storage/{{$image->url}}">
+                                <li {{-- class="rounded-t h-96 w-full object-cover object-center" --}} data-thumb="/storage/{{$image->url}}">
                                     <img class="w-full" src="/storage/{{$image->url}}" />
                                 </li>
                             @endforeach
