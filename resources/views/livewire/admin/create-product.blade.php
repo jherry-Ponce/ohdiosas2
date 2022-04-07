@@ -76,22 +76,11 @@
 
 
         <div class="w-full">
-            <x-jet-label value="Costo Dolares/Soles" />
+            <x-jet-label value="Costo" />
              <x-jet-input type="number" wire:model="priceC" step=".01"/>{{-- step define el ingreso de decimales --}}
              <x-jet-input-error for="priceC"/>
         </div>
 
-        <div class="w-full">
-            <x-jet-label value="Tasa Cambio" />
-             <x-jet-input type="number" wire:model="tasa" step=".01"/>{{-- step define el ingreso de decimales --}}
-             <x-jet-input-error for="tasa"/>
-        </div>
-
-        <div class="w-full">
-            <x-jet-label value="Costo" />
-             <x-jet-input type="number" class="bg-gray-50" readonly="true" wire:model="priceF" step=".01"/>{{-- step define el ingreso de decimales --}}
-             <x-jet-input-error for="priceF"/>
-        </div>
 
 
 

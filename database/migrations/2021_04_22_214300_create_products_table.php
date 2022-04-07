@@ -22,8 +22,7 @@ class CreateProductsTable extends Migration
             $table->float('priceV');
             $table->float('priceC');
             $table->string('SKU')->nullable();
-            $table->float('tasaC')->nullable();
-            $table->float('Pdolares')->nullable();
+            
 
 
             $table->unsignedBigInteger('subcategory_id');

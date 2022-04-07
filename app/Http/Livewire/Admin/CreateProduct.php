@@ -25,8 +25,7 @@ class CreateProduct extends Component
         'description' => 'required',
         'priceV' => 'required',
         'priceC' => 'required',
-        'tasa'=>'required',
-        'priceF'=> 'required',
+        
         
     ];
 
@@ -70,8 +69,6 @@ class CreateProduct extends Component
         $product->subcategory_id=$this->subcategory_id;
         $product->brand_id='1';
         $product->priceV=$this->priceV;
-        $product->tasaC=$this->tasa;
-        $product->Pdolares=$this->priceC;
         $product->priceC=$this->priceF;
        /*  $product->SKU=; */
         if ($this->subcategory_id) {

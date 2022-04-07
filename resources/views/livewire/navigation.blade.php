@@ -228,6 +228,16 @@ Para darle funcionalidad al boton de categorias se usara javascript una de sus l
                     Perfil
                 </a>
 
+                @role('admin')
+                <a href="{{ route('admin.dashboard') }}" class="px-4 py-2 text-sm flex items-center text-trueGray-500 hover:bg-blue-500 hover:text-white">
+                    <span class="flex justify-center w-9">
+                        <i class="fas fa-user"></i>
+                    </span>
+                    Administrador
+                </a>
+                 @endrole
+
+
                 {{-- onclick metodo de java scrip//
                 event.preventDefault() -> para que se mantega en la misma pagina sin redireccion//
                 document.getElementById('logout-form')"   -> selecciona un elemento el cual recibe como parametro --}}
