@@ -1,9 +1,10 @@
 <div>
     {{-- Because she competes with no one, no one can compete with her. --}}
-    <a href="" class="px-4 py-2 text-sm flex items-center text-trueGray-500 hover:bg-blue-500 hover:text-white ">
+    <a  href=" {{ route('shopping-cart') }}" class="px-4 py-2 text-sm flex items-center text-trueGray-500 hover:bg-blue-500 hover:text-white ">
 
            
         <span class="flex justify-center w-9">
+            
             <i class="fas fa-shopping-cart"></i>
         </span>
         <span class="relative inline-block pr-4">
