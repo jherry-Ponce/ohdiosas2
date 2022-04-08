@@ -28,7 +28,7 @@
         }
 
         $preference->back_urls = array(
-            "success" => route('orders.pay',$order),
+            "success" => route('webhooks',$order),
             "failure" => "http://www.tu-sitio/failure",
             "pending" => "http://www.tu-sitio/pending"
         );
