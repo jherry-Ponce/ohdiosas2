@@ -132,7 +132,7 @@ class CreateCategory extends Component
                 ]);
             }
             /* sincrobniza y obtiene los id registrados y los remplaza */
-            dd( $this->dato);
+         
             $this->category->brands()->sync($this->dato);
             $this->modalEdit=false;
             $this->reset(

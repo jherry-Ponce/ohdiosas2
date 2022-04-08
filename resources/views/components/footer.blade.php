@@ -1,7 +1,7 @@
 <footer class="divide-y bg-trueGray-800 text-white w-full   bottom-0  ">
 	
 	<div class="max-w-7xl mx-auto sm:px-6 lg:px-8 px-6 flex flex-col justify-between py-6  space-y-6 lg:flex-row ">
-   	 <div class="lg:w-1/3">
+   	 <div class="lg:w-1/3 md:block hidden">
             <a href="/">
                 <img src="/storage/Empresa/logo.png" alt="Ohdiosas Logo" class=" h-36">            </a>
 	 </div>

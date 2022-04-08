@@ -4,12 +4,13 @@ namespace App\Http\Livewire\Admin\Empresa;
 
 use Illuminate\Support\Facades\DB;
 use Livewire\Component;
-
+use Livewire\WithFileUploads;
 class ShowEmpresa extends Component
 {
     public $nombre, $ruc, $razonsocial,$descripcion,$horario,$telefono,$ciudad,$logo,$direccion,$modal = false;
     public $status;
- 
+    use WithFileUploads;
+
     protected $rules=[
         'nombre' => 'required',
         'ruc'=>'required',
@@ -18,7 +19,7 @@ class ShowEmpresa extends Component
         'horario'=>'required',
         'telefono'=>'required',
         'ciudad'=>'required',
-        'logo'=>'required',
+        'logo'=>'required|image|max:2048',
         'direccion'=>'required',
       
 
@@ -51,6 +52,7 @@ class ShowEmpresa extends Component
     }
     public function save(){
         $this->validate();
+        $logo= $this->logo->store('categories');
         DB::table('empresas')->insert([
             'nombre_comercial'=>$this->nombre,
             'ruc'=>$this->ruc,
@@ -59,7 +61,7 @@ class ShowEmpresa extends Component
             'horario'=> $this->horario,
             'telefono'=> $this->telefono,
             'ciudad'=> $this->ciudad,
-            'logo'=> $this->logo,
+            'logo'=> $logo,
             'direccion'=> $this->direccion,
             'status'=>$this->status,
             

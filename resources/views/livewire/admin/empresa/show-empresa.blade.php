@@ -164,10 +164,20 @@
                         </div>
                 
                         <div>
-                            <x-jet-label value="logo"/>
-                            <x-jet-input type="text" class="w-full"  wire:model="logo" placeholder="direccion logo"/>
-                        
-                            <x-jet-input-error for="logo"/>
+                            <div class="w-full  overflow-hidden">
+                                <x-jet-label value="Logo" />
+                                <x-jet-input type="file" wire:model="logo" accept="image/*" {{-- id="{{$rand}}" --}} />
+                                <x-jet-input-error for="logo"/>
+                            </div>
+        
+                           
+                            <div>
+                                @if ($logo)
+                                    <img class="w-full h-64 object-cover object-center" src="{{$logo->temporaryUrl()}}" alt="">
+                                @else
+                                    <img class="w-full h-64 object-cover object-center" src="/storage/empresa/imgvacia.jpeg" alt="foto">
+                                @endif
+                            </div>
                         </div>
 
                         <div>
