@@ -55,7 +55,7 @@ class OrderController extends Controller
         $payment_id= $request->get('payment_id');
       
        
-        $response = Http::get("https://api.mercadopago.com/v1/payments/$payment_id". "?access_token=APP_USR-6948680474029470-011301-69b8e677a1312751aceade34c372c1a0-1055967631");
+        $response = Http::get("https://api.mercadopago.com/v1/payments/$payment_id". "?access_token=APP_USR-3883720095399050-040215-9f43f506890402c624ffe9f39436659d-680933559");
       
         $response=json_decode($response);                                                           
         
