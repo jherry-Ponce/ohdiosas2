@@ -2,7 +2,7 @@
     
     @php
         // SDK de Mercado Pago
-        require base_path('vendor/autoload.php');
+        require base_path('/vendor/autoload.php');
         
         // Agrega credenciales
         MercadoPago\SDK::setAccessToken(config('services.mercadopago.token'));
@@ -11,7 +11,8 @@
         $preference = new MercadoPago\Preference();
 
         
-        $shipments = new MercadoPago\Shipments();
+        $shipments = new MercadoPago\Shipments(); 
+       
 
         $shipments->cost=$order->shipping_cost;
         $shipments->mode="not_specified";

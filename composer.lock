@@ -3085,16 +3085,16 @@
         },
         {
             "name": "mercadopago/dx-php",
-            "version": "2.4.4",
+            "version": "2.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mercadopago/sdk-php.git",
-                "reference": "678f1e059309c5340f928df909e6b747caed2116"
+                "reference": "f10f278386baf7bf055681c67a95eeafc217d180"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mercadopago/sdk-php/zipball/678f1e059309c5340f928df909e6b747caed2116",
-                "reference": "678f1e059309c5340f928df909e6b747caed2116",
+                "url": "https://api.github.com/repos/mercadopago/sdk-php/zipball/f10f278386baf7bf055681c67a95eeafc217d180",
+                "reference": "f10f278386baf7bf055681c67a95eeafc217d180",
                 "shasum": ""
             },
             "require": {
@@ -3131,9 +3131,9 @@
             "description": "Mercado Pago PHP SDK",
             "homepage": "https://github.com/mercadopago/sdk-php",
             "support": {
-                "source": "https://github.com/mercadopago/sdk-php/tree/2.4.4"
+                "source": "https://github.com/mercadopago/sdk-php/tree/2.4.5"
             },
-            "time": "2021-10-20T18:08:36+00:00"
+            "time": "2022-01-24T18:22:34+00:00"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
