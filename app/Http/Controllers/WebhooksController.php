@@ -15,7 +15,7 @@ class WebhooksController extends Controller
         $this->authorize('author', $order);
         $this->authorize('payment',$order);
 
-        dd($request);
+    
         $payment_id= $request->get('payment_id');
       
        

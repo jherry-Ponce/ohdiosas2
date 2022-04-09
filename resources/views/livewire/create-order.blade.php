@@ -168,7 +168,7 @@
             <div class="text-gray-700">
                 <p class="flex justify-between items-center">
                     Subtotal
-                    <span class="font-semibold">{{Cart::subtotal()}} S/.</span>
+                    <span class="font-semibold">S/.{{Cart::subtotal()}} </span>
                 </p>
                 <p class="flex justify-between items-center">
                     Envío
@@ -176,7 +176,7 @@
                         @if ($envio_type == 1 || $shipping_cost == 0)
                             Gratis
                         @else
-                            {{$shipping_cost}} S/.
+                          S/.{{$shipping_cost}}
                         @endif
                     </span>
                 </p>
@@ -186,9 +186,9 @@
                 <p class="flex justify-between items-center font-semibold">
                     <span class="text-lg">Total</span>
                     @if ($envio_type == 1)
-                        {{Cart::subtotal()}} S/.
+                         S/.{{Cart::subtotal()}} 
                     @else
-                        {{Cart::subtotal() + $shipping_cost}} S/.
+                        S/.{{Cart::subtotal() + $shipping_cost}} 
                     @endif
                 </p>
             </div>

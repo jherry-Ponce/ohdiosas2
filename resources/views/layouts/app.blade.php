@@ -33,7 +33,8 @@
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       {{-- flexslider --}}
       <script src="{{asset('vendor/FlexSlider/jquery.flexslider-min.js')}}"></script>
-  
+      <script src="https://sdk.mercadopago.com/js/v2"></script>
+    
  </head>
 
  <body class="font-sans antialiased  ">
