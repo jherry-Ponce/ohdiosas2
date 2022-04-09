@@ -39,7 +39,7 @@
 
         $preference->items = $products;
         $preference->save();
-        dd( $preference->id);
+        dd( $preference->items, $preference->id );
     @endphp
 
 
