@@ -43,7 +43,7 @@ Route::middleware(['auth'])->group(function(){
 
     
 });
-Route::post('webhooks', WebhooksController::class);
+Route::post('orders/{order}/webhooks', WebhooksController::class);
 
 
 
