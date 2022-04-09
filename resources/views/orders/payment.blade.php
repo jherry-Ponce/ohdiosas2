@@ -146,7 +146,7 @@
 
     </div>
 
-    <script src="https://sdk.mercadopago.com.pe/js/v2"></script>
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
 
     <script>
         // Agrega credenciales de SDK
