@@ -41,7 +41,7 @@ Route::middleware(['auth'])->group(function(){
 
     Route::get('orders/{order}/pay', [OrderController::class, 'pay'])->name('orders.pay');
 
-    Route::post('webhooks', WebhooksController::class)->name('webhooks');
+    Route::post('orders/{order}/webhooks', WebhooksController::class)->name('webhooks');
 });
 
 
