@@ -26,6 +26,7 @@
 
             $products[] = $item;
             
+
         }
 
         $preference->back_urls = array(
