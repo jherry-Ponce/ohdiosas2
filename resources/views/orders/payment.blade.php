@@ -3,7 +3,7 @@
     @php
         // SDK de Mercado Pago
         require base_path('vendor/autoload.php');
-        dd(base_path('vendor/autoload.php'));
+        
         // Agrega credenciales
         MercadoPago\SDK::setAccessToken(config('services.mercadopago.token'));
 
@@ -147,7 +147,9 @@
 
     </div>
 
-
+    @push('script')
+        
+    
     <script src="https://sdk.mercadopago.com/js/v2"></script>
     
 
@@ -169,5 +171,5 @@
         });
 
     </script>
-
+ @endpush
 </x-app-layout>
