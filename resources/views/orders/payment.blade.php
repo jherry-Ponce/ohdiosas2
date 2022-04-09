@@ -10,7 +10,7 @@
         // Crea un objeto de preferencia
         $preference = new MercadoPago\Preference();
 
-
+        
         $shipments = new MercadoPago\Shipments();
 
         $shipments->cost=$order->shipping_cost;
@@ -38,6 +38,7 @@
         $preference->auto_return = "approved";
 
         $preference->items = $products;
+        dd($preference, $preference->items , $products);
         $preference->save();
         dd($preference, $preference->items , $products);
     @endphp
