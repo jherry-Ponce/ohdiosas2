@@ -25,6 +25,7 @@
             $item->unit_price = $product->price;
 
             $products[] = $item;
+            
         }
 
         $preference->back_urls = array(
