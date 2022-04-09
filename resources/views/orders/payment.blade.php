@@ -38,7 +38,7 @@
         $preference->auto_return = "approved";
 
         $preference->items = $products;
-        dd($preference, $preference->items , $products);
+        
         $preference->save();
         dd($preference, $preference->items , $products);
     @endphp
