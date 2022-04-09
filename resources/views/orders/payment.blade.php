@@ -6,7 +6,7 @@
         
         // Agrega credenciales
         MercadoPago\SDK::setAccessToken(config('services.mercadopago.token'));
-
+    dd(  config('services.mercadopago.token'));
         // Crea un objeto de preferencia
         $preference = new MercadoPago\Preference();
 
