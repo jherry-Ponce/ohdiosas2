@@ -146,8 +146,8 @@
 
     </div>
 
-   {{--  <script src="https://sdk.mercadopago.com/js/v2"></script> --}}
-    <script src="https://www.mercadopago.com.pe/integrations/v1/web-payment-checkout.js" ></script>
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+    
 
     <script>
         // Agrega credenciales de SDK
