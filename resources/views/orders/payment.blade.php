@@ -151,7 +151,7 @@
     <script>
         // Agrega credenciales de SDK
           const mp = new MercadoPago("{{config('services.mercadopago.key')}}", {
-                locale: 'es-AR'
+                locale: 'es-PE'
           });
         
           // Inicializa el checkout
