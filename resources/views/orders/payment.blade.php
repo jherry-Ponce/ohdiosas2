@@ -19,17 +19,17 @@
 
         $preference->shipments=$shipments;
         // Crea un ítem en la preferencia
-        /* 
-        foreach ($items as $product) { */
+        
+        foreach ($items as $product) {
             $item = new MercadoPago\Item();
             $item->title = $product->name;
             $item->quantity = $product->qty;
             $item->unit_price = 75.76;
 
-      /*       $products[] = $item;
+            $products[] = $item;
             
 
-        } */
+        }
 
         $preference->back_urls = array(
             "success" => route('webhooks',$order),
@@ -41,7 +41,7 @@
         $preference->items = array($item);
         
         $preference->save();
-        dd($preference, $preference->items , $products);
+        dd($preference, $preference->items , $products,$item);
     @endphp
 
 
