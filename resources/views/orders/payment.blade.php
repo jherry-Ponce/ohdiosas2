@@ -24,7 +24,7 @@
             $item = new MercadoPago\Item();
             $item->title = $product->name;
             $item->quantity = $product->qty;
-            $item->unit_price = 75.76;
+            $item->unit_price =floatval($product->price);
 
             $products[] = $item;
             
