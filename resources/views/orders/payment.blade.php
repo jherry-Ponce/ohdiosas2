@@ -1,6 +1,6 @@
 <x-app-layout>
     
-    @php
+    <?php
         // SDK de Mercado Pago
         require base_path('/vendor/autoload.php');
         
@@ -30,7 +30,7 @@
             
 
         }
-        dd($preference, $item , $products);
+     
         $preference->back_urls = array(
             "success" => route('orders.pay',$order),
             "failure" => "http://www.tu-sitio/failure",
@@ -41,8 +41,8 @@
         $preference->items = $products;
         
         $preference->save();
-      /*   dd($preference, $preference->items , $products); */
-    @endphp
+        dd($preference, $item , $products);
+        ?>
 
 
     <div class="container py-8">
