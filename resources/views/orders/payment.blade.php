@@ -1,6 +1,6 @@
 <x-app-layout>
     
-    <?php
+    @php
         // SDK de Mercado Pago
         require base_path('/vendor/autoload.php');
         
@@ -14,7 +14,7 @@
         $shipments = new MercadoPago\Shipments(); 
        
 
-        $shipments->cost=$order->shipping_cost;
+        $shipments->cost=floatval($order->shipping_cost);
         $shipments->mode="not_specified";
 
         $preference->shipments=$shipments;
@@ -42,7 +42,7 @@
         
         $preference->save();
         dd($preference, $item , $products);
-        ?>
+    @endphp
 
 
     <div class="container py-8">
