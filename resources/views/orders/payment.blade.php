@@ -41,7 +41,7 @@
         $preference->items = $products;
         
         $preference->save();
-        dd($preference, $preference->items , $products);
+   
     @endphp
 
 
