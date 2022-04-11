@@ -30,18 +30,18 @@
             
 
         }
-
+        dd($preference, $item , $products);
         $preference->back_urls = array(
-            "success" => route('webhooks',$order),
+            "success" => route('orders.pay',$order)
             "failure" => "http://www.tu-sitio/failure",
-            "pending" => "http://www.tu-sitio/pending"
+            "pending" => "http://www.tu-sitio/pending",
         );
         $preference->auto_return = "approved";
 
-        $preference->items = array($item);
+        $preference->items = $products;
         
         $preference->save();
-        dd($preference, $preference->items , $products,$item);
+        dd($preference, $preference->items , $products);
     @endphp
 
 
