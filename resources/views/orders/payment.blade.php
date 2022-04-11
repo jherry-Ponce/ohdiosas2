@@ -32,7 +32,7 @@
         }
         dd($preference, $item , $products);
         $preference->back_urls = array(
-            "success" => route('orders.pay',$order)
+            "success" => route('orders.pay',$order),
             "failure" => "http://www.tu-sitio/failure",
             "pending" => "http://www.tu-sitio/pending",
         );
@@ -41,7 +41,7 @@
         $preference->items = $products;
         
         $preference->save();
-        dd($preference, $preference->items , $products);
+      /*   dd($preference, $preference->items , $products); */
     @endphp
 
 
