@@ -29,7 +29,7 @@ class Kernel extends ConsoleKernel
         /* para produccion se necesita configurar un crome */
         $schedule->call(function () {
             /* toma la hora de hace 10 minutos */
-            $hora = now()->subMinute(10);
+            $hora = now()->subMinute(4);
             /* consulta las ordenes conb status 1 y menos a 10 minutos */
             $orders = Order::where('status', 1)->whereTime('created_at', '<=', $hora)->get();
             /* itera las ordenes */
