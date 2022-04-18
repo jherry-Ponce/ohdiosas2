@@ -143,6 +143,31 @@ class CreateCategory extends Component
             $this->getCategories();
     }
 
+    public function status($id){
+
+        $this->orden= Category::where('id',$id)
+        ->first();
+       
+       
+        
+        switch ($this->orden->status) {
+            case '0':
+                $this->orden->status='1';
+                 $this->orden->save();
+                break;
+            case '1':
+                
+                $this->orden->status='0';
+                $this->orden->save();
+                break;
+                            
+            default:
+                
+                break;
+        }
+ 
+    }
+
 
 
     public function render()
