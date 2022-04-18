@@ -10,9 +10,9 @@ use Illuminate\Support\Facades\Http;
 class WebhooksController extends Controller
 {
     //
-    public function __invoke(Order $order,Request $request){
+    public function __invoke(/* Order $order, */Request $request){
         
-        $this->authorize('author', $order);
+        /* $this->authorize('author', $order);
         $this->authorize('payment',$order);
 
     
@@ -42,6 +42,7 @@ class WebhooksController extends Controller
             
         }
 
-        return redirect()->route('orders.show',$order);
+        return redirect()->route('orders.show',$order); */
+        return http_response_code(200);
     }
 }
