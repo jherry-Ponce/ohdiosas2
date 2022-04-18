@@ -61,10 +61,10 @@
                                                         <div class="ml-auto">
                                                             @switch($category->status)
                                                             @case(0)
-                                                                <span wire:click="status({{$category->id}})" class="bg-yellow-400  font-semibold text-white py-1 px-3 rounded-full text-xs">Oculto</span>
+                                                                <span wire:click="status({{$category->id}})" class="bg-yellow-400  font-semibold text-white py-1 px-3 rounded-full text-xs cursor-pointer">Oculto</span>
                                                                 @break
                                                             @case(1)
-                                                                <span wire:click="status({{$category->id}})" class=" font-semibold bg-red-400 text-white py-1 px-3 rounded-full text-xs">Publicado</span>
+                                                                <span wire:click="status({{$category->id}})" class=" font-semibold bg-red-400 text-white py-1 px-3 rounded-full text-xs cursor-pointer">Publicado</span>
                                                                 @break
                                                             
                                                             @default
