@@ -33,8 +33,8 @@
      
         $preference->back_urls = array(
             "success" => route('orders.pay',$order),
-            "failure" => "http://www.tu-sitio/failure",
-            "pending" => "http://www.tu-sitio/pending",
+            "failure" => "https://www.ohdiosasbikinis.com/failure",
+            "pending" => "https://www.ohdiosasbikinis.com/pending",
         );
         $preference->auto_return = "approved";
 
