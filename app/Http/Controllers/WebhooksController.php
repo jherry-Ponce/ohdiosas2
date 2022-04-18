@@ -12,9 +12,9 @@ class WebhooksController extends Controller
     //
     public function __invoke(Request $request){
         
-        $this->authorize('author', $order);
+        /* $this->authorize('author', $order);
         $this->authorize('payment',$order);
-
+ */
     
         $payment_id= $request->get('payment_id');
       
@@ -25,7 +25,7 @@ class WebhooksController extends Controller
         
         $status=$response->status;
        
-        if ($status =='approved') {
+       /*  if ($status =='approved') {
 
             $venta = new Venta();
 
@@ -40,8 +40,8 @@ class WebhooksController extends Controller
             $order->save();
 
             
-        }
+        } */
 
-        return redirect()->route('orders.show',$order);
+        return redirect()->route('orders.show'/* ,$order */);
     }
 }
