@@ -16,17 +16,17 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
         //crea la carpeta para almacenar las imagenes
-         Storage::deleteDirectory('categoria');
+      /*    Storage::deleteDirectory('categoria');
          Storage::deleteDirectory('subcategoria');
          Storage::deleteDirectory('producto');
         Storage::makeDirectory('categoria');
         Storage::makeDirectory('subcategoria'); 
-        Storage::makeDirectory('producto'); 
+        Storage::makeDirectory('producto');  */
         //databaseseeder es el que se ejecuta
          //en realidad asi que es necesario que este haga el llamado a los de mas seeder pra que se puedan compilar
 
         $this->call(UserSeeder::class);
-        $this->call(CategorySeeder::class);
+       /*  $this->call(CategorySeeder::class);
         $this->call(SubcategorySeeder::class);
 
         $this->call(ProductSeeder::class);
@@ -35,7 +35,7 @@ class DatabaseSeeder extends Seeder
         $this->call(ColorProductSeeder::class);
         
         $this->call(SizeSeeder::class);
-        $this->call(ColorSizeSeeder::class);
+        $this->call(ColorSizeSeeder::class); */
 
         
     }

@@ -13,7 +13,7 @@
 						<a href="#">¿Quienes somos?</a>
 					</li>
 					<li>
-						<a href="https://codersfree.com/contact">Contáctanos</a>
+						<a href="">Contáctanos</a>
 					</li>
 				</ul>
 			</div>
@@ -24,7 +24,7 @@
 						<a href="privacy-policy">Politicas y Privacidad</a>
 					</li>
 					<li>
-						<a href="https://codersfree.com/terms-of-service">Terminos y condiciones</a>
+						<a href="">Terminos y condiciones</a>
 					</li>
 				</ul>
 			</div>
@@ -32,23 +32,23 @@
 				<h3 class="uppercase text-white">Servicios</h3>
 				<ul class="space-y-1">
 					<li>
-						<a href="https://codersfree.com/contact">Prendas</a>
+						<a href="">Prendas</a>
 					</li>
 					<li>
-						<a href="https://codersfree.com/contact">Accesorios</a>
+						<a href="">Accesorios</a>
 					</li>
 				</ul>
 			</div>
 			<div class="space-y-3">
 				<div class="uppercase text-white">Social media</div>
 				<div class="flex justify-start space-x-3">
-					<a onclick="fbq('trackCustom', 'VisitaFacebook');" href="https://www.facebook.com/codersfree" target="_blank" title="Facebook" class="flex items-center p-1">
+					<a onclick="fbq('trackCustom', 'VisitaFacebook');" href="https://www.facebook.com/dianaorozcograo" target="_blank" title="Facebook" class="flex items-center p-1">
 						<i class="fab fa-facebook text-2xl"></i>
 					</a>
-					<a onclick="fbq('trackCustom', 'VisitaPayPal');" href="https://www.paypal.com/paypalme/CodersFreePeru" target="_blank" title="Paypal" class="flex items-center p-1">
+					<a onclick="fbq('trackCustom', 'VisitaPayPal');" href="" target="_blank" title="Paypal" class="flex items-center p-1">
 						<i class="fab fa-paypal text-2xl"></i>
 					</a>
-					<a onclick="fbq('trackCustom', 'VisitaPatreon');" href="https://www.patreon.com/join/codersfree" target="_blank" title="Patreon" class="flex items-center p-1">
+					<a onclick="fbq('trackCustom', 'VisitaPatreon');" href="" target="_blank" title="Patreon" class="flex items-center p-1">
 						<i class="fab fa-patreon text-2xl"></i>
 					</a>
 				</div>
