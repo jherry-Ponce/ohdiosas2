@@ -5,6 +5,7 @@
            <a href="/">
             <img src="https://scontent.ftru2-1.fna.fbcdn.net/v/t1.6435-9/151832684_885168635637235_2906067587046004896_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHKXI72YRilsGFhOABatbijhnDqHoWziS6GcOoehbOJLuCQRQecDh82nR4ZNr4Jm3G74YnTn7eU4n7QsP0obnQN&_nc_ohc=COXy8WXhKPoAX94rkAS&_nc_ht=scontent.ftru2-1.fna&oh=00_AT8Wlhnw0cbOflJjqtkv7HmbwBUoXVatIcXNnXLvDtjSNA&oe=6221850B"
             class=" max-h-48 m-auto md:hidden ">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fdianaorozcograo%2Fphotos%2Fa.224898151664290%2F885168632303902%2F&show_text=true&width=500" width="500" height="534" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
            </a>
         </x-slot>
 
